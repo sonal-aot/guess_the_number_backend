@@ -13,11 +13,11 @@ const checkNumber = (req, res) => {
   const userNum = getUserNum();
   if (secret == userNum) {
     randomNumber();
-    res.status(200).send("Correct Guess...");
+    res.status(200).send("Wow..., Correct Guess...");
   } else {
-    console.log(userNum);
-    console.log(secret);
-    res.send("Better Luck Next Time...!!");
+    console.log("User Number : ", userNum);
+    console.log("Secret Number : ", secret);
+    res.send("Better Luck Next Time..!!");
   }
 };
 
